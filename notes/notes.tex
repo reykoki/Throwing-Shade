@@ -13,7 +13,7 @@
 
 
 
-\title{Notes}
+\title{Physics Notes}
 \author{Rey Koki}
 \date{\today}
 \begin{document}
@@ -21,7 +21,24 @@
 
 \section{Solar Radiation}
 
-\href{http://www.overleaf.com}{Something Linky} 
+The expected solar radiation is an important component when using the threshold method for cloud detection. While we aren't using the threshold method, it would be an interesting experiment to see if incoorporating that data will improve our deep learning model.
+
+We don't want to have to add anything complicated, or time consuming to implement properly, so we use the equations given in this \href{https://github.com/reykoki/Throwing-Shade/blob/main/notes/ASHRAE_paper.pdf}{paper} that use the ASHRAE clear-sky model. This simple model doesn't require any atmospheric data, but just the datetime, zenith angle and lat/lon.
+
+
+\subsection{radiance}
+energy striking an area per unit time
+
+\section{Bands}
+
+\subsection{Band Combination}
+Check out this \href{https://www.staridasgeography.gr/how-to-make-outstanding-maps-with-sentinel-2-and-arcgis-pro-part-1-band-combinations/}{article}
+\subsubsection{B02-B11-B12}
+The Snow and Clouds band composite can be produced by assigning the Blue, SWIR 1 and SWIR 2 bands. Thick ice and snow appear in vivid red or red-orange. Clouds appear white, so this combination of bands is especially useful for distinguishing clouds from snow.
+
+\subsection{Probably Useful Bands}
+
+
 
 
 \end{document}
